@@ -57,6 +57,7 @@ public class NiuInsuranceTest extends BaseClass{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+	        
 	        //Go to profile and click on new insurance button
 	        insurance.newInsuranceBtn();
 	        
