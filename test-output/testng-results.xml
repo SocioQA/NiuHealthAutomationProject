@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-14T16:17:06 IST" name="Default suite" finished-at="2025-01-14T16:17:35 IST" duration-ms="28388">
+  <suite started-at="2025-01-14T16:38:25 IST" name="Default suite" finished-at="2025-01-14T16:38:45 IST" duration-ms="19864">
     <groups>
     </groups>
-    <test started-at="2025-01-14T16:17:06 IST" name="Default test" finished-at="2025-01-14T16:17:35 IST" duration-ms="28388">
+    <test started-at="2025-01-14T16:38:25 IST" name="Default test" finished-at="2025-01-14T16:38:45 IST" duration-ms="19864">
       <class name="niuHealth.NiuInsuranceTest">
-        <test-method is-config="true" signature="configureReports()[pri:0, instance:niuHealth.NiuInsuranceTest@52af26ee]" started-at="2025-01-14T16:17:06 IST" name="configureReports" finished-at="2025-01-14T16:17:07 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="configureReports()[pri:0, instance:niuHealth.NiuInsuranceTest@52af26ee]" started-at="2025-01-14T16:38:25 IST" name="configureReports" finished-at="2025-01-14T16:38:25 IST" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReports -->
-        <test-method is-config="true" signature="launchChrome()[pri:0, instance:niuHealth.NiuInsuranceTest@52af26ee]" started-at="2025-01-14T16:17:07 IST" name="launchChrome" finished-at="2025-01-14T16:17:16 IST" duration-ms="9180" status="PASS">
+        <test-method is-config="true" signature="launchChrome()[pri:0, instance:niuHealth.NiuInsuranceTest@52af26ee]" started-at="2025-01-14T16:38:25 IST" name="launchChrome" finished-at="2025-01-14T16:38:34 IST" duration-ms="8985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChrome -->
-        <test-method signature="testProfile()[pri:0, instance:niuHealth.NiuInsuranceTest@52af26ee]" started-at="2025-01-14T16:17:16 IST" name="testProfile" finished-at="2025-01-14T16:17:35 IST" duration-ms="18949" status="PASS">
+        <test-method signature="testProfile()[pri:0, instance:niuHealth.NiuInsuranceTest@52af26ee]" started-at="2025-01-14T16:38:34 IST" name="testProfile" finished-at="2025-01-14T16:38:45 IST" duration-ms="10614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfile -->

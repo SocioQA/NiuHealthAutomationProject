@@ -1,5 +1,10 @@
 package pom;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +34,10 @@ public class NiuHealthProfilePage extends BaseClass{
     @FindBy(xpath = "/html/body/div/div[2]/div[2]/ul/li[5]/a")
     WebElement Profile;
     
+    //Upload Profile Image
+    @FindBy(xpath = "//*[@id='ctnFrmProf']/form/div[1]/div[1]/div/button[text()='Change']")
+    WebElement changeProfileImgButton;
+    
     //Contact Number
     @FindBy(xpath = "//*[@id='contactNum']")
     WebElement contactNumber;
@@ -52,6 +61,32 @@ public class NiuHealthProfilePage extends BaseClass{
         
     public void clickOnProfile() {
         wait.until(ExpectedConditions.visibilityOf(Profile)).click();     
+    }
+    
+    public void clickOnChange() {
+        wait.until(ExpectedConditions.visibilityOf(changeProfileImgButton)).click();     
+    }
+    
+    // Method to upload the file using the Robot class
+    public void uploadProfileImage(String profileImagePath) throws AWTException, InterruptedException {
+        // Use Robot Class to handle the file manager dialog
+        Robot robot = new Robot();
+
+        // Copy the file path to clipboard
+        StringSelection selection = new StringSelection(profileImagePath);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+
+        // Simulate CTRL + V to paste the file path
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+
+        // Simulate pressing ENTER to confirm
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+
+        System.out.println("Profile image uploaded successfully!");
     }
     
     public void enterContactNumber() {
