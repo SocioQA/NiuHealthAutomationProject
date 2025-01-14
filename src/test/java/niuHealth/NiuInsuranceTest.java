@@ -15,6 +15,12 @@ import pom.NiuHealthProfilePage;
 import utility.BaseClass;
 import utility.Reports;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.awt.datatransfer.StringSelection;
+
 public class NiuInsuranceTest extends BaseClass{
 	ExtentReports reports;
 	ExtentTest test;
@@ -33,13 +39,52 @@ public class NiuInsuranceTest extends BaseClass{
 	   }
 	    
 	    @Test
-	    public void testProfile() throws ParseException {
+	    public void testProfile() throws ParseException, AWTException, InterruptedException {
 	    	NiuHealthLoginPage loginPage = new NiuHealthLoginPage(driver);
 	    	NiuHealthProfilePage profilePage = new NiuHealthProfilePage(driver);
 	    	NiuHealthInsurancePage insurance = new NiuHealthInsurancePage(driver);
-
+	    	
+	        // Upload the file
+	        String filePath1 = "C:\\Users\\91738\\a.png";
+	        // Upload the file
+	        String filePath2 = "C:\\Users\\91738\\b.png";
+	        
+	        //Login
 	        loginPage.loginWithNewUser();
-	        //profilePage.clickOnProfile();
+	        try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        //Go to profile and click on new insurance button
+	        insurance.newInsuranceBtn();
+	        
+	        //Click on 1st upload button
+	        insurance.click1stUploadButton();
+	        try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        insurance.uploadFile1(filePath1);
+	        try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        
+	        insurance.click2ndUploadButton();	        
+	        try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        //Upload 2nd image/file
+	        insurance.uploadFile2(filePath2);
 	    }
 
 }
