@@ -54,7 +54,7 @@ public class cancelVirtualVisit extends BaseClass{
 	        virtualVisitPage.selectDate();
 	        virtualVisitPage.selectTimeDropdown();
 	        virtualVisitPage.BookYourAppointment();
-	        //virtualVisitPage.yesCancelVirtualVisitAppointment();	        
+	        virtualVisitPage.yesCancelVirtualVisitAppointment();
 	    }
 
 	 

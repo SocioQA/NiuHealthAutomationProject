@@ -56,8 +56,12 @@ public class NiuHealthLoginPage extends BaseClass{
     WebElement invalidCredentials;
     
 	//Verification Pop up
-	@FindBy (xpath = "/html/body/div[2]/div/div[6]/button[text()='Start Verification']")
+	@FindBy(xpath = "/html/body/div[2]/div/div[6]/button[text()='Start Verification']")
 	WebElement startVerificationBtn;
+	
+	//Logout button on dash board
+	@FindBy(xpath = "//*[@id='root']/div[2]/div[2]/div/ul/li/a")
+	WebElement logoutBtn;
 
 
     public void login() {
@@ -209,5 +213,9 @@ public class NiuHealthLoginPage extends BaseClass{
         }
 	 
 	  }
+    
+    public void logoutMethod() {
+    	wait.until(ExpectedConditions.visibilityOf(logoutBtn)).click();
+    }
 
 }
