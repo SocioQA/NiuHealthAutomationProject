@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="niuHealth.NiuInsuranceTest">
+      <class name="niuHealth.cancelVirtualVisit">
         <methods>
           <include name="configureReports"/>
+          <include name="testCancelVisit"/>
           <include name="launchChrome"/>
-          <include name="testProfile"/>
+          <include name="createReportAfterTest"/>
+          <include name="publishReports"/>
         </methods>
-      </class> <!-- niuHealth.NiuInsuranceTest -->
+      </class> <!-- niuHealth.cancelVirtualVisit -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

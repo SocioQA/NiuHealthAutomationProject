@@ -40,7 +40,10 @@ public class NiuVirtualVisitPage extends BaseClass{
     
     //Speciality- Family Practice
     @FindBy(xpath = "//*[@id='root']/div[2]/div/div/div[2]/div[1]/div/div/div[1]/button[2]")
-    WebElement speciality;   
+    WebElement speciality;  
+    //Weight loss
+    @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div/div/div[2]/div[1]/div/div/div[1]/button[4]")
+    WebElement weightLossSpeciality;
     //Select symptoms-Cough
     @FindBy(xpath = "//*[@id='root']/div[2]/div/div/div[2]/div[1]/div/div/div[2]/button[1]")
     WebElement symptoms;
@@ -115,7 +118,7 @@ public class NiuVirtualVisitPage extends BaseClass{
     }
     
     public void selectSpecialityAndSymptoms() {
-        wait.until(ExpectedConditions.visibilityOf(speciality)).click(); 
+        wait.until(ExpectedConditions.visibilityOf(weightLossSpeciality)).click(); 
         wait.until(ExpectedConditions.visibilityOf(symptoms)).click();        
     }
     public void bookYourAppointment() {
