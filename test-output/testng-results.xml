@@ -2,39 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-22T14:20:16 IST" name="Default suite" finished-at="2025-01-22T14:20:29 IST" duration-ms="13068">
+  <suite started-at="2025-01-22T15:53:40 IST" name="Default suite" finished-at="2025-01-22T15:54:10 IST" duration-ms="29779">
     <groups>
     </groups>
-    <test started-at="2025-01-22T14:20:16 IST" name="Default test" finished-at="2025-01-22T14:20:29 IST" duration-ms="13068">
-      <class name="niuHealth.firefoxLoginTestCases">
-        <test-method is-config="true" signature="configureReports()[pri:0, instance:niuHealth.firefoxLoginTestCases@1b2abca6]" started-at="2025-01-22T14:20:16 IST" name="configureReports" finished-at="2025-01-22T14:20:16 IST" duration-ms="259" status="PASS">
+    <test started-at="2025-01-22T15:53:40 IST" name="Default test" finished-at="2025-01-22T15:54:10 IST" duration-ms="29779">
+      <class name="niuHealth.NiuInsuranceTest">
+        <test-method is-config="true" signature="configureReports()[pri:0, instance:niuHealth.NiuInsuranceTest@1b2abca6]" started-at="2025-01-22T15:53:40 IST" name="configureReports" finished-at="2025-01-22T15:53:41 IST" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReports -->
-        <test-method is-config="true" signature="launchFirefox()[pri:0, instance:niuHealth.firefoxLoginTestCases@1b2abca6]" started-at="2025-01-22T14:20:16 IST" name="launchFirefox" finished-at="2025-01-22T14:20:27 IST" duration-ms="10621" status="PASS">
+        <test-method is-config="true" signature="launchChrome()[pri:0, instance:niuHealth.NiuInsuranceTest@1b2abca6]" started-at="2025-01-22T15:53:41 IST" name="launchChrome" finished-at="2025-01-22T15:53:51 IST" duration-ms="10236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchFirefox -->
-        <test-method signature="testLoginOnFireFoxBrowser()[pri:0, instance:niuHealth.firefoxLoginTestCases@1b2abca6]" started-at="2025-01-22T14:20:27 IST" name="testLoginOnFireFoxBrowser" finished-at="2025-01-22T14:20:28 IST" duration-ms="1227" status="PASS">
+        </test-method> <!-- launchChrome -->
+        <test-method signature="testProfile()[pri:0, instance:niuHealth.NiuInsuranceTest@1b2abca6]" started-at="2025-01-22T15:53:51 IST" name="testProfile" finished-at="2025-01-22T15:54:10 IST" duration-ms="18659" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginOnFireFoxBrowser -->
-        <test-method is-config="true" signature="publishReports(org.testng.ITestResult)[pri:0, instance:niuHealth.firefoxLoginTestCases@1b2abca6]" started-at="2025-01-22T14:20:28 IST" name="publishReports" finished-at="2025-01-22T14:20:28 IST" duration-ms="216" status="PASS">
+        </test-method> <!-- testProfile -->
+        <test-method is-config="true" signature="publishReports(org.testng.ITestResult)[pri:0, instance:niuHealth.NiuInsuranceTest@1b2abca6]" started-at="2025-01-22T15:54:10 IST" name="publishReports" finished-at="2025-01-22T15:54:10 IST" duration-ms="243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLoginOnFireFoxBrowser status=SUCCESS method=firefoxLoginTestCases.testLoginOnFireFoxBrowser()[pri:0, instance:niuHealth.firefoxLoginTestCases@1b2abca6] output={null}]]]>
+                <![CDATA[[TestResult name=testProfile status=SUCCESS method=NiuInsuranceTest.testProfile()[pri:0, instance:niuHealth.NiuInsuranceTest@1b2abca6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReports -->
-        <test-method is-config="true" signature="createReportAfterTest()[pri:0, instance:niuHealth.firefoxLoginTestCases@1b2abca6]" started-at="2025-01-22T14:20:28 IST" name="createReportAfterTest" finished-at="2025-01-22T14:20:29 IST" duration-ms="712" status="PASS">
+        <test-method is-config="true" signature="createReportAfterTest()[pri:0, instance:niuHealth.NiuInsuranceTest@1b2abca6]" started-at="2025-01-22T15:54:10 IST" name="createReportAfterTest" finished-at="2025-01-22T15:54:10 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReportAfterTest -->
-      </class> <!-- niuHealth.firefoxLoginTestCases -->
+      </class> <!-- niuHealth.NiuInsuranceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
