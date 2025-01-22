@@ -19,7 +19,7 @@ public class Screenshot {
 		String dt= dateTime.format(time);
 		
 		File sourceFile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File destinationFile= new File("C:\\Users\\91738\\eclipse-workspace\\Spotsaver\\src\\test\\resources\\TestScreenshots\\" +fileName +"-" +dt +".png");
+		File destinationFile= new File("C:\\Users\\91738\\eclipse-workspace\\NiuHealth\\src\\test\\resources\\TestScreenshots\\" +fileName +"-" +dt +".png");
 		try {
 			FileHandler.copy(sourceFile, destinationFile);
 		} catch (IOException e) {
