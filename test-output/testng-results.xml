@@ -2,39 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-22T16:53:18 IST" name="Default suite" finished-at="2025-01-22T16:53:39 IST" duration-ms="20865">
+  <suite started-at="2025-01-23T15:14:46 IST" name="Default suite" finished-at="2025-01-23T15:15:04 IST" duration-ms="17568">
     <groups>
     </groups>
-    <test started-at="2025-01-22T16:53:18 IST" name="Default test" finished-at="2025-01-22T16:53:39 IST" duration-ms="20865">
-      <class name="niuHealth.UploadProfileImageTest">
-        <test-method is-config="true" signature="configureReports()[pri:0, instance:niuHealth.UploadProfileImageTest@1b2abca6]" started-at="2025-01-22T16:53:18 IST" name="configureReports" finished-at="2025-01-22T16:53:18 IST" duration-ms="215" status="PASS">
+    <test started-at="2025-01-23T15:14:46 IST" name="Default test" finished-at="2025-01-23T15:15:04 IST" duration-ms="17568">
+      <class name="niuHealth.ProfileTest">
+        <test-method is-config="true" signature="configureReports()[pri:0, instance:niuHealth.ProfileTest@1b2abca6]" started-at="2025-01-23T15:14:46 IST" name="configureReports" finished-at="2025-01-23T15:14:46 IST" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReports -->
-        <test-method is-config="true" signature="launchChrome()[pri:0, instance:niuHealth.UploadProfileImageTest@1b2abca6]" started-at="2025-01-22T16:53:18 IST" name="launchChrome" finished-at="2025-01-22T16:53:28 IST" duration-ms="9526" status="PASS">
+        <test-method is-config="true" signature="launchChrome()[pri:0, instance:niuHealth.ProfileTest@1b2abca6]" started-at="2025-01-23T15:14:46 IST" name="launchChrome" finished-at="2025-01-23T15:14:58 IST" duration-ms="12100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChrome -->
-        <test-method signature="testProfileImage()[pri:0, instance:niuHealth.UploadProfileImageTest@1b2abca6]" started-at="2025-01-22T16:53:28 IST" name="testProfileImage" finished-at="2025-01-22T16:53:39 IST" duration-ms="10552" status="PASS">
+        <test-method signature="testProfile()[pri:0, instance:niuHealth.ProfileTest@1b2abca6]" started-at="2025-01-23T15:14:58 IST" name="testProfile" finished-at="2025-01-23T15:15:02 IST" duration-ms="3847" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testProfileImage -->
-        <test-method is-config="true" signature="publishReports(org.testng.ITestResult)[pri:0, instance:niuHealth.UploadProfileImageTest@1b2abca6]" started-at="2025-01-22T16:53:39 IST" name="publishReports" finished-at="2025-01-22T16:53:39 IST" duration-ms="226" status="PASS">
+        </test-method> <!-- testProfile -->
+        <test-method is-config="true" signature="publishReports(org.testng.ITestResult)[pri:0, instance:niuHealth.ProfileTest@1b2abca6]" started-at="2025-01-23T15:15:02 IST" name="publishReports" finished-at="2025-01-23T15:15:03 IST" duration-ms="284" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProfileImage status=SUCCESS method=UploadProfileImageTest.testProfileImage()[pri:0, instance:niuHealth.UploadProfileImageTest@1b2abca6] output={null}]]]>
+                <![CDATA[[TestResult name=testProfile status=SUCCESS method=ProfileTest.testProfile()[pri:0, instance:niuHealth.ProfileTest@1b2abca6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReports -->
-        <test-method is-config="true" signature="createReportAfterTest()[pri:0, instance:niuHealth.UploadProfileImageTest@1b2abca6]" started-at="2025-01-22T16:53:39 IST" name="createReportAfterTest" finished-at="2025-01-22T16:53:39 IST" duration-ms="314" status="PASS">
+        <test-method is-config="true" signature="createReportAfterTest()[pri:0, instance:niuHealth.ProfileTest@1b2abca6]" started-at="2025-01-23T15:15:03 IST" name="createReportAfterTest" finished-at="2025-01-23T15:15:04 IST" duration-ms="987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReportAfterTest -->
-      </class> <!-- niuHealth.UploadProfileImageTest -->
+      </class> <!-- niuHealth.ProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
