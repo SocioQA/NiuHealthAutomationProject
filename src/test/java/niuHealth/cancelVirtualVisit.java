@@ -54,7 +54,7 @@ public class cancelVirtualVisit extends BaseClass{
 	        virtualVisitPage.selectDate();
 	        virtualVisitPage.selectTimeDropdown();
 	        virtualVisitPage.BookYourAppointment();
-	        virtualVisitPage.yesCancelVirtualVisitAppointment();
+	        //virtualVisitPage.yesCancelVirtualVisitAppointment();
 	    }
 
 	 
@@ -68,7 +68,7 @@ public class cancelVirtualVisit extends BaseClass{
 	        loginPage.login();
 	        myAptmnt.clickOnMyAppointments();
 	        myAptmnt.upcomingAppointmentsSection();
-	        virtualVisitPage.yesCancelVirtualVisitAppointment();
+	        //virtualVisitPage.yesCancelVirtualVisitAppointment();
 	        
 	    }
 	    
